@@ -41,17 +41,17 @@ public class PxFragment extends BasePxFragment {
             break;
             case 3:{
                 RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) px.getLayoutParams();
-                layoutParams.width = DensityUtils.dp2px(getContext(), px.getWidth());
-                layoutParams.height = DensityUtils.dp2px(getContext(), px.getHeight());
+                layoutParams.width = DensityUtils.dp2px(getContext(), model.getWidth());
+                layoutParams.height = DensityUtils.dp2px(getContext(), model.getHeight());
                 px.setLayoutParams(layoutParams);
             }
             break;
             case 4:{
                 RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) px.getLayoutParams();
-                layoutParams.height = DensityUtils.dp2px(getContext(), px.getHeight());
-                layoutParams.leftMargin = DensityUtils.dp2px(getContext(), px.getX());
-                layoutParams.rightMargin = DensityUtils.dp2px(getContext(), px.getX());
-                layoutParams.topMargin = DensityUtils.dp2px(getContext(), px.getY());
+                layoutParams.height = DensityUtils.dp2px(getContext(), model.getHeight());
+                layoutParams.leftMargin = DensityUtils.dp2px(getContext(), model.getX());
+                layoutParams.rightMargin = DensityUtils.dp2px(getContext(), model.getX());
+                layoutParams.topMargin = DensityUtils.dp2px(getContext(), model.getY());
                 px.setLayoutParams(layoutParams);
             }
             break;
